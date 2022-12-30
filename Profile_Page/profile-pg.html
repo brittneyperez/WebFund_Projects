@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile-pg.css">
+</head>
+<body>
+    <!-- top nav -->
+    <div class="top">
+        <!-- banner => top -->
+        <div class="top_nav">
+            <h1>Profile</h1>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" id="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
+        </div>
+        <button class="btn_sign">Sign Out</button>
+    </div>
+
+    <!-- mid container ~ start -->
+    <div class="container-flex">
+        <!-- left column: user & edu -->
+        <div class="col-left">
+            
+            <!-- user card -->
+            <div class="user_card">
+                <div id="user_header">
+                    <img src="./imgs/jane-m.jpg" alt="Jane Doe" id="user_pfp">
+                </div>
+                <div class="info">
+                    <h2 id="user-name">Jane Doe</h2> <!--name change here -->
+                    <h3 class="location">
+                        <img src="./icons/map-marker.png" alt="pin" class="icon_s">
+                        Seattle</h3>
+                    <p id="desc">Developer | Engineer | Problem Solver <br>
+                    Master of shadows and the Internet!</p>
+                    <div class="edit">
+                        <img src="./icons/gear.png" alt="edit" class="icon_s">
+                        <p><a href="#" id="edit_name" onclick="nameChange()">edit profile</a></p> <!-- edit name here -->
+                    </div>                    
+                </div>
+            </div>
+            
+            <!-- education -->
+            <div id="card_edu">
+                <div class="header-1">
+                    <h2>Education</h2>
+                </div>
+                <div class="edu_info">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p id="date">Dec 2019 - Mar 2020</p>
+                    <p>Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- right column: requests & connections -->
+        <div class="col-right">
+            
+            <div class="card_requests">
+                <div class="header-2">
+                    <span class="num" id="req_num">2</span> <!-- this number decreases -->
+                    <h2>Connection Requests</h2>
+                </div>
+                <!-- user 1 -->
+                <div class="user-line" id="request-1">
+                    <span class="start">
+                        <img src="./imgs/todd-s.jpg" alt="user todd" class="avatar_s">
+                        <span>Todd E</span>
+                    </span>
+                    <span class="end">
+                        <img src="./icons/accept-circle.png" alt="accept" class="icon_med" onclick="accept('#request-1')">
+                        <img src="./icons/close-circle.png" alt="decline" class="icon_med" onclick="ignore('#request-1')">
+                    </span>
+                </div>
+                <!-- user 2 -->
+                <div class="user-line" id="request-2">
+                    <span class="start">
+                        <img src="./imgs/phil-s.jpg" alt="user phil" class="avatar_s">
+                        <span>Phil K</span>
+                    </span>
+                    <span class="end">
+                        <img src="./icons/accept-circle.png" alt="accept" class="icon_med" onclick="accept('#request-2')">
+                        <img src="./icons/close-circle.png" alt="decline" class="icon_med" onclick="ignore('#request-2')">
+                    </span>
+                </div>
+            </div>
+
+            <div class="card_connections">
+                <div class="header-2">
+                    <span class="num" id="cnxts">500</span>
+                    <h2>Your Connections</h2>
+                </div>
+                
+                <!-- friend 1 -->
+                <div class="user-line-2">
+                    <p class="user-line start">
+                        <img src="./imgs/adrien-s.jpg" alt="user adrien" class="avatar_s">
+                        <span>Adrien D</span>
+                    </p>
+                </div>
+                <!-- friend 2 -->
+                <div class="user-line-2">
+                    <p class="user-line start">
+                        <img src="./imgs/anne-s.jpg" alt="user phil" class="avatar_s">
+                        <span>Anne J</span>
+                    </p>
+                </div>
+                <!-- friend 3 -->
+                <div class="user-line-2">
+                    <p class="user-line start">
+                        <img src="./imgs/alayne-s.jpg" alt="user phil" class="avatar_s">
+                        <span>Alayne T</span>
+                    </p>
+                </div>
+                <!-- friend 4 -->
+                <div class="user-line-2">
+                    <p class="user-line start">
+                        <img src="./imgs/arry-s.jpg" alt="user phil" class="avatar_s">
+                        <span>Arry Y</span>
+                    </p>
+                </div>
+
+                <div class="footer"><a href="#">View More</a></div>
+            </div>
+
+        </div> <!-- mid container ~ end -->
+    </div> <!-- container-flex ~end -->
+    
+    <script src="profile-pg.js"></script>
+</body>
+</html>

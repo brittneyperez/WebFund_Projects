@@ -1,0 +1,34 @@
+div.spacing {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 7px;
+    margin: 5px;
+}
+
+    button#search {
+        border: 2px solid mediumturquoise;
+        color: mediumturquoise;
+        padding: 5px;
+        width: 150px;
+    }
+    button#plus {
+        background-color: mediumturquoise;
+        color: white;
+        border-radius: 50%;
+        border-style: hidden;
+        width: 35px;
+        height: 35px
+    } 
+
+    button#account {
+        color: white;
+        background-color: dodgerblue;
+            box-shadow: 4px 4px black;
+        border: 3px solid black;
+        border-radius: 0px;
+        width: 150px;
+    }

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+.icon_s {
+    height: 50px;
+}
+
+/* head */
+.top {
+    background-color: lightsteelblue;
+    color: white;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+}
+
+.nav h1 {
+    font-size: 2rem;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+/* body */
+.nav, .container, .footer {
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+
+.container-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+    .container-top h2 {
+        font-size: 1.8rem;
+    }
+
+.container-top label, .container-top select {
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.container-top select {
+    width: 60px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+
+.container-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forecast {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 20px 15px;
+    width: 125px;
+    /* height: 220px; */
+    text-align: center;
+    /* line-height: 2; */
+}
+    img {
+        height: 100px;
+        border-radius: 50%;
+        margin: 20px 0;
+    }
+    .forecast p {
+        font-size: 1.2rem;
+    }
+
+.temps {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+    .high, .low {
+        font-weight: bold;
+    }
+    .high::after, .low::after {
+        content: "˚";
+    }
+    .high {
+        color: crimson;
+    }
+    .low {
+        color: cornflowerblue;
+    }
+
+/* cookie policy HELP */
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+#cookie_msg {
+    background-color: #eeeeee;
+    border: 3px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* width: 800px; */
+    height: 120px;
+    padding: 20px;
+}
+
+.msg_text {
+    width: 70%;
+    margin: 0 20px;
+}
+    .msg_text h2 {
+        font-size: 1.2rem;
+    }
+    .msg_text p {
+        font-size: 1rem;
+    }
+
+.btn {
+    background-color: lightsteelblue;
+    color: black;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    padding: 5px 15px;
+    /* height: 40px; */
+    font-size: 1.2rem;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+
+h1 {
+    background-color: black;
+    color: white;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+
+}
+    span {
+        color: cyan;
+    }
+
+h2 {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    background-color: rgb(157, 214, 255);
+    color: rebeccapurple;
+    text-align: right;
+    text-decoration: underline;
+    font-weight: lighter;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}

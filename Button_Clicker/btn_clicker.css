@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.container {
+    width: 800px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* top navigation */
+.top {
+    background-color: lightgray;
+    height: 50px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+}
+.nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    h1 {
+        font-size: 2.8rem;
+    }
+    #search {
+        border: 2px solid black;
+        width: 100%;
+        /* font-size: 1.2rem; */
+        padding: 5px;
+        margin: 0 50px;
+    }
+    #access_btn {
+        background-color: cornflowerblue;
+        color: white;
+        border: 2px solid black;
+        box-shadow: 3px 3px black;
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+/* top nav ~ end */
+
+/* flex container */
+.flex-container {
+    display: flex;
+    /* outline: 2px solid thistle; */
+
+}
+
+.left_col {
+    flex: 2;
+    /* outline: 2px solid thistle; */
+}
+.right_col {
+    flex: 1;
+    /* outline: 2px solid thistle; */
+}
+
+/* left col: definitions */
+.def_1, .def_2 {
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    margin: 0 20px 20px 0;
+}
+    .details {
+        flex: 1;
+        text-align: center;
+        margin-right: 20px;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .like_btn {
+        background-color: #F9E79F;
+        font-size: 1rem;
+        border: 3px solid black;
+        box-shadow: 3px 3px black;
+        padding: 5px 20px;
+        margin-top: 20px;
+    }
+    .def {
+        flex: 2;
+    }
+
+/* right col: add */
+.add_def {
+    border: 3px solid black;
+    align-items: center;
+    padding: 20px;
+    /* justify-content: center; */
+}
+
+h3 {
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+#add_btn {
+    background-color: #AED581;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}

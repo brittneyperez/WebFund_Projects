@@ -1,0 +1,42 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: gainsboro;
+    font-family: sans-serif;
+}
+
+.container-flex {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 30px
+}
+/* user block */
+.user {
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#username {
+    font-size: 24px;
+}
+.like_btn {
+    height: 40px;
+    width: 90px;
+    background-color: gold;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}

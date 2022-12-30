@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid thistle; */
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 700px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+a {
+    color: royalblue;
+}
+
+/* top */
+.top {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* container body */
+h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.container-flex {
+    display: flex;
+}
+    .left_col {
+        flex: 1;
+    }
+    .right_col {
+        flex: 2;
+    }
+
+/* LEFT */
+.user {
+    border: 4px solid black;
+    height: 240px;
+    padding: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+    img#user_pfp {
+        margin-top: 20px;
+        height: 100px
+    }
+    .user p, .user h3 {
+        margin-top: 20px;
+    }
+
+/* RIGHT */
+.post {
+    border: 4px solid black;
+    height: 120px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.2rem;
+}
+
+.top_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+    h3 {
+        font-size: 1.6rem;
+    }
+    .likes {
+        font-size: 1.2rem;
+    }
+    .like_btn {
+        background-color: #F9E79F;
+        font-size: 1rem;
+        border: 3px solid black;
+        box-shadow: 3px 3px black;
+        padding: 5px 15px;
+        margin-left: 25px;
+        cursor: pointer;
+    }
